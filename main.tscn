@@ -1,7 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://bsaqk4ueeaj8d"]
+[gd_scene load_steps=3 format=3 uid="uid://bsaqk4ueeaj8d"]
 
 [ext_resource type="PackedScene" uid="uid://b4us81q0h6gpp" path="res://individual scenes/yunlong.tscn" id="1_2lxex"]
+[ext_resource type="PackedScene" uid="uid://uclmtp375f55" path="res://level_1.tscn" id="2_wkdg0"]
 
 [node name="main" type="Node2D"]
 
 [node name="Yunlong" parent="." instance=ExtResource("1_2lxex")]
+
+[node name="level 1" parent="." instance=ExtResource("2_wkdg0")]
