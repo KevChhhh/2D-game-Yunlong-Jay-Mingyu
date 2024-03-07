@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://coonck843y8td"]
+[gd_scene load_steps=2 format=3 uid="uid://coonck843y8td"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q77sq"]
+size = Vector2(102, 86)
 
 [node name="Mingyu" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(565, 331)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_q77sq")
