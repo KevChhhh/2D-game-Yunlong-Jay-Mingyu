@@ -12,11 +12,7 @@
 [node name="level 1" parent="." instance=ExtResource("2_wkdg0")]
 
 [node name="Jay" parent="." instance=ExtResource("3_o7mvc")]
-<<<<<<< Updated upstream
 position = Vector2(331, 207)
 
 [node name="Mingyu" parent="." instance=ExtResource("4_r17ie")]
 position = Vector2(716, 799)
-=======
-position = Vector2(193, 114)
->>>>>>> Stashed changes
