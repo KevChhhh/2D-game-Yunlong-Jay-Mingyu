@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://uclmtp375f55"]
+[gd_scene load_steps=13 format=3 uid="uid://uclmtp375f55"]
 
 [ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_y1s6t"]
 [ext_resource type="Texture2D" uid="uid://cl24dfsw6xr1e" path="res://ASSET/Free-2D-Knight-Sprite-Sheets/Body_Parts/1_KNIGHT/1_body_.png" id="2_4t5tb"]
 [ext_resource type="Texture2D" uid="uid://cm1ag8ivkkejo" path="res://ASSET/Sunny-land-files/Sunny-land-files/Graphical Assets/environment/tileset.png" id="3_1rq37"]
+[ext_resource type="Script" path="res://PathFollow2D.gd" id="4_tlmlq"]
+[ext_resource type="Texture2D" uid="uid://bnqmqi5xagdhf" path="res://ASSET/icon.svg" id="5_84hsn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d3rxl"]
 size = Vector2(2194, 389)
@@ -150,6 +152,12 @@ texture = ExtResource("3_1rq37")
 [sub_resource type="TileSet" id="TileSet_f44gy"]
 sources/1 = SubResource("TileSetAtlasSource_3ip6l")
 
+[sub_resource type="Curve2D" id="Curve2D_463y3"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2524, 330, 0, 0, 0, 0, 3534, 324, 0, 0, 0, 0, 2524, 330)
+}
+point_count = 3
+
 [node name="level 1" type="Node2D"]
 
 [node name="START" type="StaticBody2D" parent="."]
@@ -197,6 +205,21 @@ position = Vector2(-121, 36)
 shape = SubResource("RectangleShape2D_qmy8r")
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2(-450, 604)
+position = Vector2(-438, 610)
+scale = Vector2(5, 5)
 tile_set = SubResource("TileSet_f44gy")
 format = 2
+layer_0/tile_data = PackedInt32Array(-1, 65537, 1, -65536, 65537, 1, -65535, 65537, 1, -65534, 65537, 1, -65533, 65537, 1, -65532, 65537, 1, -65531, 65537, 1, -65530, 65537, 1, -65529, 65537, 1, -65528, 65537, 1, -65527, 65537, 1, -65526, 65537, 1, -65525, 65537, 1, -65524, 65537, 1, -65523, 65537, 1, -65522, 65537, 1, -65521, 65537, 1, -65520, 65537, 1, -65519, 65537, 1, -65518, 65537, 1, -65517, 65537, 1, -65516, 65537, 1, -65515, 65537, 1, -65514, 65537, 1, -65513, 65537, 1, -65512, 65537, 1, -65511, 65537, 1, 65535, 65537, 3, 0, 65537, 3, 1, 65537, 3, 2, 65537, 3, 3, 65537, 3, 4, 65537, 3, 5, 65537, 3, 6, 65537, 3, 7, 65537, 3, 8, 65537, 3, 9, 65537, 3, 10, 65537, 3, 11, 65537, 3, 12, 65537, 3, 13, 65537, 3, 14, 65537, 3, 15, 65537, 3, 16, 65537, 3, 17, 65537, 3, 18, 65537, 3, 19, 65537, 3, 20, 65537, 3, 21, 65537, 3, 22, 65537, 3, 23, 65537, 3, 24, 65537, 3, 25, 65537, 3, 65561, 65537, 3, 131097, 65537, 3, 196633, 65537, 3, 196632, 65537, 3, 196631, 65537, 3, 196630, 65537, 3, 196629, 65537, 3, 196628, 65537, 3, 196627, 65537, 3, 196626, 65537, 3, 196625, 65537, 3, 196624, 65537, 3, 196623, 65537, 3, 196622, 65537, 3, 196621, 65537, 3, 131085, 65537, 3, 131084, 65537, 3, 196620, 65537, 3, 196619, 65537, 3, 196618, 65537, 3, 196617, 65537, 3, 196616, 65537, 3, 131080, 65537, 3, 131079, 65537, 3, 196615, 65537, 3, 196614, 65537, 3, 196613, 65537, 3, 196612, 65537, 3, 196611, 65537, 3, 196610, 65537, 3, 196609, 65537, 3, 196608, 65537, 3, 262143, 65537, 3, 196607, 65537, 3, 131071, 65537, 3, 65536, 65537, 3, 131072, 65537, 3, 131073, 65537, 3, 65537, 65537, 3, 65538, 65537, 3, 131074, 65537, 3, 131075, 65537, 3, 65539, 65537, 3, 65540, 65537, 3, 131077, 65537, 3, 65541, 65537, 3, 131076, 65537, 3, 131078, 65537, 3, 65544, 65537, 3, 65543, 65537, 3, 65542, 65537, 3, 65545, 65537, 3, 65546, 65537, 3, 65547, 65537, 3, 65548, 65537, 3, 65549, 65537, 3, 65550, 65537, 3, 65551, 65537, 3, 65552, 65537, 3, 65553, 65537, 3, 65554, 65537, 3, 65555, 65537, 3, 65556, 65537, 3, 65557, 65537, 3, 65558, 65537, 3, 65559, 65537, 3, 65560, 65537, 3, 131094, 65537, 3, 131095, 65537, 3, 131096, 65537, 3, 131093, 65537, 3, 131092, 65537, 3, 131090, 65537, 3, 131089, 65537, 3, 131088, 65537, 3, 131087, 65537, 3, 131086, 65537, 3, 131083, 65537, 3, 131082, 65537, 3, 131081, 65537, 3, 131091, 65537, 3)
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_463y3")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(2524, 330)
+rotation = -0.00594052
+script = ExtResource("4_tlmlq")
+
+[node name="Icon" type="Sprite2D" parent="Path2D/PathFollow2D"]
+position = Vector2(-4.01172, 1.9762)
+rotation = 0.00594052
+texture = ExtResource("5_84hsn")
