@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://cj0ua51mjfyq"]
+[gd_scene load_steps=2 format=3 uid="uid://cj0ua51mjfyq"]
+
+[ext_resource type="Texture2D" uid="uid://db0cw6t0wt8j7" path="res://ASSET/hell back.jpg" id="1_syekb"]
 
 [node name="Level2" type="Node2D"]
+
+[node name="HellBack" type="Sprite2D" parent="."]
+position = Vector2(561, 312)
+texture = ExtResource("1_syekb")
