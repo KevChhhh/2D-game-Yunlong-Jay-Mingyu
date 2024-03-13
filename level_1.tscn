@@ -155,6 +155,72 @@ _data = {
 }
 point_count = 4
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_1jugt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36grd"]
+atlas = ExtResource("4_c6g4a")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6rvvf"]
+atlas = ExtResource("4_c6g4a")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s2t7i"]
+atlas = ExtResource("4_c6g4a")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t1ql1"]
+atlas = ExtResource("4_c6g4a")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uy5hx"]
+atlas = ExtResource("4_c6g4a")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24e5o"]
+atlas = ExtResource("4_c6g4a")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1pg0"]
+atlas = ExtResource("4_c6g4a")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0ybi"]
+atlas = ExtResource("4_c6g4a")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_skp4q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_36grd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6rvvf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s2t7i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t1ql1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uy5hx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24e5o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m1pg0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0ybi")
+}],
+"loop": true,
+"name": &"moving",
+"speed": 5.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_220pu"]
 size = Vector2(230, 710)
 
@@ -207,10 +273,20 @@ position = Vector2(2524, 330)
 rotation = -0.00594052
 script = ExtResource("4_tlmlq")
 
-[node name="Icon" type="Sprite2D" parent="Path2D/PathFollow2D"]
-position = Vector2(-4.01172, 1.9762)
+[node name="StaticBody2D" type="StaticBody2D" parent="Path2D/PathFollow2D"]
+position = Vector2(25.2693, 13.4467)
 rotation = 0.00594052
-texture = ExtResource("5_84hsn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/StaticBody2D"]
+position = Vector2(-27.3486, -9.29633)
+scale = Vector2(8, 8)
+shape = SubResource("CircleShape2D_1jugt")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Path2D/PathFollow2D/StaticBody2D"]
+position = Vector2(-29.3485, -10.2963)
+scale = Vector2(4.10207, 4.02664)
+sprite_frames = SubResource("SpriteFrames_skp4q")
+animation = &"moving"
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(4882, 558)
