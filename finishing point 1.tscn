@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://finishing point 1.gd" id="1_ibhpg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gb588"]
-size = Vector2(278.75, 308)
+size = Vector2(81, 174)
 
 [node name="FinishingPoint1" type="Node2D"]
 script = ExtResource("1_ibhpg")
@@ -11,23 +11,22 @@ script = ExtResource("1_ibhpg")
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 9.0
 offset_top = -4.0
-offset_right = 201.0
-offset_bottom = 308.0
+offset_right = 92.0
+offset_bottom = 173.0
 
 [node name="Area2D" type="Area2D" parent="ColorRect"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Area2D"]
-position = Vector2(96, 157)
+position = Vector2(44, 90)
 shape = SubResource("RectangleShape2D_gb588")
 
 [node name="Label" type="Label" parent="ColorRect"]
 modulate = Color(1, 0.388235, 0.14902, 1)
 layout_mode = 0
-offset_left = 22.0
-offset_top = 23.0
-offset_right = 203.0
-offset_bottom = 290.0
-theme_override_font_sizes/font_size = 63
+offset_left = -2.0
+offset_right = 82.0
+offset_bottom = 174.0
+theme_override_font_sizes/font_size = 29
 text = "Level 
 Finish 
 Here"
