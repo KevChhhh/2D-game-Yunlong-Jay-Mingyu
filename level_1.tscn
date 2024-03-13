@@ -1,10 +1,26 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=15 format=3 uid="uid://uclmtp375f55"]
+=======
+<<<<<<< HEAD
+[gd_scene load_steps=14 format=3 uid="uid://uclmtp375f55"]
+=======
+[gd_scene load_steps=15 format=3 uid="uid://uclmtp375f55"]
+>>>>>>> 8fd9d4f5e3d3158b1ed92e92267c3ab6eec7464b
+>>>>>>> Stashed changes
 
 [ext_resource type="PackedScene" uid="uid://coonck843y8td" path="res://Mingyu.tscn" id="1_t4oyf"]
 [ext_resource type="Texture2D" uid="uid://cm1ag8ivkkejo" path="res://ASSET/Sunny-land-files/Sunny-land-files/Graphical Assets/environment/tileset.png" id="3_1rq37"]
 [ext_resource type="Script" path="res://PathFollow2D.gd" id="4_tlmlq"]
 [ext_resource type="Texture2D" uid="uid://bnqmqi5xagdhf" path="res://ASSET/icon.svg" id="5_84hsn"]
+<<<<<<< Updated upstream
 [ext_resource type="Script" path="res://Death Box.gd" id="5_tr4kb"]
+=======
+<<<<<<< HEAD
+[ext_resource type="PackedScene" uid="uid://cxfehamp1l08d" path="res://finishing point 1.tscn" id="5_j1gs6"]
+=======
+[ext_resource type="Script" path="res://Death Box.gd" id="5_tr4kb"]
+>>>>>>> 8fd9d4f5e3d3158b1ed92e92267c3ab6eec7464b
+>>>>>>> Stashed changes
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d3rxl"]
 size = Vector2(2143, 389)
@@ -233,7 +249,7 @@ size = Vector2(9321, 122)
 [node name="level 1" type="Node2D"]
 
 [node name="Mingyu" parent="." instance=ExtResource("1_t4oyf")]
-position = Vector2(238, 193)
+position = Vector2(46, 211)
 scale = Vector2(0.5, 0.5)
 
 [node name="START" type="StaticBody2D" parent="."]
@@ -302,6 +318,13 @@ position = Vector2(5763, 523)
 position = Vector2(-1.5, 7.75)
 shape = SubResource("RectangleShape2D_n1iut")
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+[node name="FinishingPoint1" parent="." instance=ExtResource("5_j1gs6")]
+position = Vector2(5659, -179)
+=======
+>>>>>>> Stashed changes
 [node name="Death Box" type="Area2D" parent="."]
 position = Vector2(2838, 993)
 script = ExtResource("5_tr4kb")
@@ -309,3 +332,7 @@ script = ExtResource("5_tr4kb")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Death Box"]
 position = Vector2(-5, 0)
 shape = SubResource("RectangleShape2D_lpwdb")
+<<<<<<< Updated upstream
+=======
+>>>>>>> 8fd9d4f5e3d3158b1ed92e92267c3ab6eec7464b
+>>>>>>> Stashed changes
