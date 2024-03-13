@@ -1,9 +1,10 @@
-[gd_scene load_steps=23 format=3 uid="uid://uclmtp375f55"]
+[gd_scene load_steps=15 format=3 uid="uid://uclmtp375f55"]
 
 [ext_resource type="PackedScene" uid="uid://coonck843y8td" path="res://Mingyu.tscn" id="1_t4oyf"]
 [ext_resource type="Texture2D" uid="uid://cm1ag8ivkkejo" path="res://ASSET/Sunny-land-files/Sunny-land-files/Graphical Assets/environment/tileset.png" id="3_1rq37"]
-[ext_resource type="Texture2D" uid="uid://bblkxtaw7647n" path="res://ASSET/traps/Suriken.png" id="4_c6g4a"]
 [ext_resource type="Script" path="res://PathFollow2D.gd" id="4_tlmlq"]
+[ext_resource type="Texture2D" uid="uid://bnqmqi5xagdhf" path="res://ASSET/icon.svg" id="5_84hsn"]
+[ext_resource type="Script" path="res://Death Box.gd" id="5_tr4kb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d3rxl"]
 size = Vector2(2143, 389)
@@ -150,9 +151,9 @@ sources/1 = SubResource("TileSetAtlasSource_3ip6l")
 
 [sub_resource type="Curve2D" id="Curve2D_463y3"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 2524, 330, 0, 0, 0, 0, 3534, 324, 0, 0, 0, 0, 2524, 330)
+"points": PackedVector2Array(0, 0, 0, 0, 2524, 330, 0, 0, 0, 0, 3534, 324, 0, 0, 0, 0, 3114, 327, 0, 0, 0, 0, 2524, 330)
 }
-point_count = 3
+point_count = 4
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1jugt"]
 
@@ -226,6 +227,9 @@ size = Vector2(230, 710)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n1iut"]
 size = Vector2(235, 790.5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lpwdb"]
+size = Vector2(9321, 122)
+
 [node name="level 1" type="Node2D"]
 
 [node name="Mingyu" parent="." instance=ExtResource("1_t4oyf")]
@@ -297,3 +301,11 @@ position = Vector2(5763, 523)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2(-1.5, 7.75)
 shape = SubResource("RectangleShape2D_n1iut")
+
+[node name="Death Box" type="Area2D" parent="."]
+position = Vector2(2838, 993)
+script = ExtResource("5_tr4kb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Death Box"]
+position = Vector2(-5, 0)
+shape = SubResource("RectangleShape2D_lpwdb")
