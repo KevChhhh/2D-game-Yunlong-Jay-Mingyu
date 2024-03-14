@@ -3957,5 +3957,13 @@ position = Vector2(574, 325)
 scale = Vector2(1.48728, 1.34986)
 texture = ExtResource("1_4yjro")
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 330)
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.21
+editor_draw_screen = false
+editor_draw_drag_margin = true
+
 [connection signal="pressed" from="Control/start button" to="Control/start button" method="_on_pressed"]
 [connection signal="pressed" from="Control/END button" to="Control/END button" method="_on_pressed"]
