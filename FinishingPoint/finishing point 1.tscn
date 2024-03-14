@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cxfehamp1l08d"]
 
-[ext_resource type="Script" path="res://finishing point 1.gd" id="1_ibhpg"]
+[ext_resource type="Script" path="res://FinishingPoint/finishing point 1.gd" id="1_ibhpg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gb588"]
 size = Vector2(81, 174)

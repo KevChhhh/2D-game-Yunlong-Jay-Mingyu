@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://tysbjqbhqexp"]
 
-[ext_resource type="Texture2D" uid="uid://d2571ubdop2u1" path="res://ASSET/background.png" id="1_4yjro"]
-[ext_resource type="Script" path="res://start button.gd" id="1_kg5oj"]
-[ext_resource type="Script" path="res://END button.gd" id="2_xl7jy"]
+[ext_resource type="Script" path="res://openning/start button.gd" id="1_7r8be"]
+[ext_resource type="Script" path="res://openning/END button.gd" id="2_3ol0f"]
+[ext_resource type="Texture2D" uid="uid://d2571ubdop2u1" path="res://ASSET/background.png" id="3_2bhu6"]
 
 [sub_resource type="Theme" id="Theme_yj8ow"]
 
@@ -3926,7 +3926,7 @@ offset_right = 462.0
 offset_bottom = 543.0
 theme_override_font_sizes/font_size = 50
 text = "Start"
-script = ExtResource("1_kg5oj")
+script = ExtResource("1_7r8be")
 
 [node name="END button" type="Button" parent="Control"]
 layout_mode = 0
@@ -3938,7 +3938,7 @@ theme_override_font_sizes/font_size = 50
 toggle_mode = true
 text = "End
 "
-script = ExtResource("2_xl7jy")
+script = ExtResource("2_3ol0f")
 
 [node name="TextEdit" type="TextEdit" parent="."]
 offset_left = 355.0
@@ -3955,7 +3955,7 @@ show_behind_parent = true
 light_mask = 0
 position = Vector2(574, 325)
 scale = Vector2(1.48728, 1.34986)
-texture = ExtResource("1_4yjro")
+texture = ExtResource("3_2bhu6")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 330)

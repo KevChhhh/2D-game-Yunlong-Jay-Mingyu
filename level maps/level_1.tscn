@@ -1,12 +1,12 @@
 [gd_scene load_steps=27 format=3 uid="uid://uclmtp375f55"]
 
-[ext_resource type="PackedScene" uid="uid://coonck843y8td" path="res://Mingyu.tscn" id="1_t4oyf"]
+[ext_resource type="PackedScene" uid="uid://coonck843y8td" path="res://character/knight/Mingyu(Character).tscn" id="1_t4oyf"]
 [ext_resource type="Texture2D" uid="uid://cm1ag8ivkkejo" path="res://ASSET/Sunny-land-files/Sunny-land-files/Graphical Assets/environment/tileset.png" id="3_1rq37"]
 [ext_resource type="Texture2D" uid="uid://bblkxtaw7647n" path="res://ASSET/traps/Suriken.png" id="4_pak0e"]
-[ext_resource type="Script" path="res://PathFollow2D.gd" id="4_tlmlq"]
-[ext_resource type="Script" path="res://CollisionShape2D.gd" id="5_asdtx"]
-[ext_resource type="Script" path="res://Death Box.gd" id="5_tr4kb"]
-[ext_resource type="Script" path="res://Node2D.gd" id="7_by7ye"]
+[ext_resource type="Script" path="res://different traps/moving saw/PathFollow2D.gd" id="4_tlmlq"]
+[ext_resource type="Script" path="res://different traps/moving saw/CollisionShape2D.gd" id="5_asdtx"]
+[ext_resource type="Script" path="res://different traps/death box/Death Box.gd" id="5_tr4kb"]
+[ext_resource type="Script" path="res://resapawn/respawnPoint.gd" id="7_by7ye"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d3rxl"]
 size = Vector2(2143, 389)

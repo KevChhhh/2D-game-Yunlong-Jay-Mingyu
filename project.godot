@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="2dGAME"
-run/main_scene="res://Openning.tscn"
+run/main_scene="res://openning/Openning.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://ASSET/icon.svg"
 
