@@ -104,8 +104,9 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_q77sq"]
-size = Vector2(381.25, 456.25)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bfmh0"]
+radius = 78.0
+height = 427.0
 
 [node name="Mingyu" type="Node2D"]
 
@@ -122,8 +123,8 @@ autoplay = "idle"
 frame_progress = 0.415694
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(156.375, -20.875)
-shape = SubResource("RectangleShape2D_q77sq")
+position = Vector2(128, -13)
+shape = SubResource("CapsuleShape2D_bfmh0")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(147, -55)
