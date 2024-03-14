@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://rjwj540xl8t7"]
+
+[ext_resource type="Script" path="res://different traps/death box/Death Box.gd" id="1_hfbbo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lpwdb"]
+size = Vector2(10300.5, 1433)
+
+[node name="Death Box" type="Area2D"]
+position = Vector2(2838, 993)
+script = ExtResource("1_hfbbo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-494.75, 655.5)
+shape = SubResource("RectangleShape2D_lpwdb")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
