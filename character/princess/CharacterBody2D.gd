@@ -3,7 +3,7 @@ signal spawning
 
 #const SPEED = 900.0
 #const JUMP_VELOCITY = -700.0
-@export var SPEED = 900.0 
+@export var SPEED = 900.0
 @export var JUMP_VELOCITY = -700.0
 @onready var animated_sprite_2d = $AnimatedSprite2D
 @onready var respawn_point = $respawn

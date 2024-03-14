@@ -3943,8 +3943,8 @@ script = ExtResource("2_3ol0f")
 [node name="TextEdit" type="TextEdit" parent="."]
 offset_left = 355.0
 offset_top = 129.0
-offset_right = 775.0
-offset_bottom = 266.0
+offset_right = 828.0
+offset_bottom = 273.0
 theme = SubResource("Theme_yj8ow")
 theme_override_fonts/font = SubResource("FontFile_u2k0y")
 theme_override_font_sizes/font_size = 94

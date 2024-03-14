@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://uclmtp375f55"]
 
-[ext_resource type="PackedScene" uid="uid://coonck843y8td" path="res://character/knight/Mingyu(Character).tscn" id="1_t4oyf"]
+[ext_resource type="PackedScene" uid="uid://coonck843y8td" path="res://character/knight/knight.tscn" id="1_t4oyf"]
 [ext_resource type="Texture2D" uid="uid://cm1ag8ivkkejo" path="res://ASSET/Sunny-land-files/Sunny-land-files/Graphical Assets/environment/tileset.png" id="3_1rq37"]
 [ext_resource type="Script" path="res://different traps/death box/Death Box.gd" id="5_tr4kb"]
 [ext_resource type="PackedScene" uid="uid://nm0cidhoh20s" path="res://different traps/moving saw/moving_saw.tscn" id="5_vhh0y"]
@@ -160,7 +160,7 @@ size = Vector2(10300.5, 1433)
 
 [node name="level 1" type="Node2D"]
 
-[node name="Mingyu" parent="." instance=ExtResource("1_t4oyf")]
+[node name="character" parent="." instance=ExtResource("1_t4oyf")]
 position = Vector2(238, 193)
 scale = Vector2(0.5, 0.5)
 
