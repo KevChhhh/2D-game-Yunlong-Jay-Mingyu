@@ -5,5 +5,20 @@
 [node name="Level2" type="Node2D"]
 
 [node name="HellBack" type="Sprite2D" parent="."]
-position = Vector2(561, 312)
+position = Vector2(574, 323)
+scale = Vector2(1, 1.03333)
 texture = ExtResource("1_syekb")
+
+[node name="Label" type="Label" parent="HellBack"]
+offset_left = -566.0
+offset_top = -95.8065
+offset_right = 565.0
+offset_bottom = 129.194
+theme_override_font_sizes/font_size = 100
+text = "You finished our Demo!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(575, 326)
+scale = Vector2(1, 1.03333)

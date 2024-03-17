@@ -1,6 +1,7 @@
-[gd_scene load_steps=25 format=3 uid="uid://coonck843y8td"]
+[gd_scene load_steps=26 format=3 uid="uid://coonck843y8td"]
 
 [ext_resource type="Script" path="res://character/knight/knight.gd" id="1_jks8j"]
+[ext_resource type="Texture2D" uid="uid://db0cw6t0wt8j7" path="res://ASSET/hell back.jpg" id="2_fb3np"]
 [ext_resource type="Texture2D" uid="uid://cgfgd253pt60s" path="res://ASSET/Free-2D-Knight-Sprite-Sheets/_PNG/1_KNIGHT/_IDLE/_IDLE_000.png" id="2_na8eq"]
 [ext_resource type="Texture2D" uid="uid://bfd6skryfwmxb" path="res://ASSET/Free-2D-Knight-Sprite-Sheets/_PNG/1_KNIGHT/_IDLE/_IDLE_001.png" id="3_d7hd1"]
 [ext_resource type="Texture2D" uid="uid://butoads2t0p2a" path="res://ASSET/Free-2D-Knight-Sprite-Sheets/_PNG/1_KNIGHT/_IDLE/_IDLE_002.png" id="4_cttii"]
@@ -114,6 +115,15 @@ height = 427.0
 position = Vector2(565, 331)
 script = ExtResource("1_jks8j")
 
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(147, -55)
+zoom = Vector2(0.5, 0.5)
+
+[node name="HellBack" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(239, -68.0005)
+scale = Vector2(10, 10)
+texture = ExtResource("2_fb3np")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 position = Vector2(239.9, -20.5)
 scale = Vector2(0.371721, 0.43677)
@@ -125,7 +135,3 @@ frame_progress = 0.415694
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(128, -13)
 shape = SubResource("CapsuleShape2D_bfmh0")
-
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(147, -55)
-zoom = Vector2(0.5, 0.5)

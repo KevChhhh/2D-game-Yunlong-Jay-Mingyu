@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://drb021pr5t08h"]
+
+[ext_resource type="Texture2D" uid="uid://bts8lb5vw3oqi" path="res://ASSET/Sunny-land-files/Sunny-land-files/Graphical Assets/environment/Props/sign.png" id="1_xwjs6"]
+
+[node name="DeathSign" type="Node2D"]
+
+[node name="death sign" type="Sprite2D" parent="."]
+position = Vector2(1604, 444)
+scale = Vector2(10.7778, 8.5)
+texture = ExtResource("1_xwjs6")
