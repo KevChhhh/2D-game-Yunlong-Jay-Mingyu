@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bweajypw0i7d5"]
+
+[ext_resource type="Script" path="res://different traps/death box/CollisionShape2D.gd" id="1_qajw1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j6g2v"]
+size = Vector2(10300.5, 1433)
+
+[node name="Deathbox2" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10935, 1075)
+shape = SubResource("RectangleShape2D_j6g2v")
+script = ExtResource("1_qajw1")
+
+[connection signal="body_shape_entered" from="." to="CollisionShape2D" method="_on_deathbox_2_body_shape_entered"]

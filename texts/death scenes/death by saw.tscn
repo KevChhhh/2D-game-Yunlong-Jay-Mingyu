@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://cp1cw60qus8u5"]
+[gd_scene load_steps=3 format=3 uid="uid://cp1cw60qus8u5"]
 
 [ext_resource type="Script" path="res://texts/death scenes/Button.gd" id="1_hrcjs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xjs0b"]
 
 [node name="deathBySaw" type="Node2D"]
 
@@ -18,7 +20,7 @@ offset_left = 213.0
 offset_top = 331.0
 offset_right = 567.0
 offset_bottom = 373.0
-theme_override_colors/font_color = Color(0.85098, 0.278431, 0, 1)
+theme_override_colors/font_color = Color(0.85098, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 text = "You are cutting into pieces "
 
@@ -30,6 +32,7 @@ offset_left = -2461.0
 offset_top = -1260.0
 offset_right = 3465.0
 offset_bottom = 1872.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xjs0b")
 text = "click to continue"
 script = ExtResource("1_hrcjs")
 

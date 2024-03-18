@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://1ocy6rsck505"]
+
+[ext_resource type="Script" path="res://texts/death scenes/Button.gd" id="1_bp2si"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_26hyn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6eidk"]
+
+[node name="DeathOffCliff2" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 197.0
+offset_top = 102.0
+offset_right = 934.0
+offset_bottom = 375.0
+theme_override_font_sizes/font_size = 200
+theme_override_styles/normal = SubResource("StyleBoxEmpty_26hyn")
+text = "You Die"
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 213.0
+offset_top = 331.0
+offset_right = 567.0
+offset_bottom = 373.0
+theme_override_colors/font_color = Color(0.988235, 0.0431373, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Watch my words"
+horizontal_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="Label"]
+position = Vector2(377, 222)
+
+[node name="deathOffCliff2" type="Button" parent="Label/Camera2D"]
+offset_left = -2461.0
+offset_top = -1260.0
+offset_right = 3465.0
+offset_bottom = 1872.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6eidk")
+text = "click to continue"
+script = ExtResource("1_bp2si")
+
+[connection signal="pressed" from="Label/Camera2D/deathOffCliff2" to="Label/Camera2D/deathOffCliff2" method="_on_pressed"]
