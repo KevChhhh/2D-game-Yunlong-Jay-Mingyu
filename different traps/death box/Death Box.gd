@@ -30,4 +30,4 @@ extends Area2D
 func _on_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if body.has_method("kill"):
 		body.kill()
-	#pass # Replace with function body.
+		get_tree().change_scene_to_file("res://death scenes/death off cliff.tscn") 
