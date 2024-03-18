@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://7xxqwlusmtkd"]
+
+[ext_resource type="Texture2D" uid="uid://b7cnra2dab1sq" path="res://ASSET/dragon.jpg" id="1_lhn5d"]
+[ext_resource type="Script" path="res://openning/backgroundStory.gd" id="1_t7lst"]
+
+[node name="BackgroundStory" type="Node2D"]
+script = ExtResource("1_t7lst")
+
+[node name="Dragon" type="Sprite2D" parent="."]
+position = Vector2(575, 402.25)
+scale = Vector2(1.08105, 1.04053)
+texture = ExtResource("1_lhn5d")
+
+[node name="Label" type="Label" parent="Dragon"]
+offset_left = -569.814
+offset_top = -513.442
+offset_right = 576.186
+offset_bottom = -273.442
+theme_override_font_sizes/font_size = 50
+text = "\"A princess has been captured by a dragon 
+and imprisoned in a small house. 
+As a knight, it's your task to save her.\" "
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Dragon/Label"]
+layout_mode = 0
+offset_left = 909.297
+offset_top = 980.272
+offset_right = 1117.3
+offset_bottom = 1102.27
+theme_override_font_sizes/font_size = 30
+text = "AI generate"
+
+[node name="Camera2D" type="Camera2D" parent="Dragon"]
+position = Vector2(8.32521, -1.20135)
+scale = Vector2(1.08105, 1.00293)
+
+[node name="Label2" type="Label" parent="Dragon"]
+offset_left = -289.532
+offset_top = 520.65
+offset_right = 296.468
+offset_bottom = 589.65
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "Press SPACE to continue"

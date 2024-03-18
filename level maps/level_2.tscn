@@ -1,23 +1,34 @@
 [gd_scene load_steps=2 format=3 uid="uid://cj0ua51mjfyq"]
 
-[ext_resource type="Texture2D" uid="uid://db0cw6t0wt8j7" path="res://ASSET/hell back.jpg" id="1_syekb"]
+[ext_resource type="Texture2D" uid="uid://bl1ta801chd2q" path="res://ASSET/knight and queen.jpg" id="1_7seuc"]
 
 [node name="Level2" type="Node2D"]
 
-[node name="HellBack" type="Sprite2D" parent="."]
-position = Vector2(574, 323)
-scale = Vector2(1, 1.03333)
-texture = ExtResource("1_syekb")
+[node name="KnightAndQueen" type="Sprite2D" parent="."]
+position = Vector2(580, 668)
+scale = Vector2(1.96859, 2.07212)
+texture = ExtResource("1_7seuc")
 
-[node name="Label" type="Label" parent="HellBack"]
-offset_left = -566.0
-offset_top = -95.8065
-offset_right = 565.0
-offset_bottom = 129.194
+[node name="Label" type="Label" parent="."]
+offset_left = 8.0
+offset_top = 224.0
+offset_right = 1139.0
+offset_bottom = 449.001
 theme_override_font_sizes/font_size = 100
 text = "You finished our Demo!"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 365.0
+offset_right = 1082.0
+offset_bottom = 461.0
+theme_override_colors/font_color = Color(0.803922, 0.811765, 0.972549, 1)
+theme_override_font_sizes/font_size = 30
+text = "AI made this picture for us "
+horizontal_alignment = 1
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(575, 326)

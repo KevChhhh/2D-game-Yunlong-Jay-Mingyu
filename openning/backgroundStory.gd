@@ -1,4 +1,4 @@
-extends Button
+extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -8,15 +8,5 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
-
-#func _on_button_pressed(): 
-	
-
-
-func _on_pressed():
-	get_tree().change_scene_to_file("res://openning/backgroundStory.tscn") 
-	print("yes")
-
-	
-	#pass # Replaceith function body.
+	if Input.is_action_just_pressed("ui_accept"):
+		get_tree().change_scene_to_file("res://level maps/level_1.tscn")
