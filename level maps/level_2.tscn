@@ -21,10 +21,10 @@ vertical_alignment = 1
 
 [node name="Label" type="Label" parent="Label"]
 layout_mode = 0
-offset_left = 251.0
-offset_top = 365.0
-offset_right = 1082.0
-offset_bottom = 461.0
+offset_left = 273.0
+offset_top = 506.0
+offset_right = 1104.0
+offset_bottom = 602.0
 theme_override_colors/font_color = Color(0.803922, 0.811765, 0.972549, 1)
 theme_override_font_sizes/font_size = 30
 text = "AI made this picture for us "
